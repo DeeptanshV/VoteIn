@@ -37,7 +37,12 @@ body {
 
   .navbar .login{
     float:right;
-   
+    margin: 5px auto;
+    margin-left: 40px;
+  }
+
+  .name{
+    margin-right: 20px;
   }
 .container{
     background-image: url;

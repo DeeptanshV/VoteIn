@@ -11,7 +11,7 @@ function register() {
         return;
     }
     alert('Hello World');
-    window.location.href = 'votepage.html?fname=' + fnameInput.value + '&email=' + emailInput.value;
+    window.location.href = 'votepage.html?test=true&name=' + fnameInput.value + '&email=' + emailInput.value;
 }
 
 
@@ -25,5 +25,5 @@ function login(){
     }
     const name = 'John';
     alert('Hello World');
-    window.location.href = 'votepage.html?email=' + emailInput.value + '&name=' + name;
+    window.location.href = 'votepage.html?test=true&email=' + emailInput.value + '&name=' + name;
 }
