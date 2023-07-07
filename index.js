@@ -10,7 +10,6 @@ function register() {
         alert('Please fill in all fields');
         return;
     }
-    alert('Hello World');
     window.location.href = 'votepage.html?test=true&name=' + fnameInput.value + '&email=' + emailInput.value;
 }
 
@@ -24,6 +23,5 @@ function login(){
         return;
     }
     const name = 'John';
-    alert('Hello World');
     window.location.href = 'votepage.html?test=true&email=' + emailInput.value + '&name=' + name;
 }
