@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+body {
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    /* background-image: linear-gradient(125deg, #89f7fe 0%, #66a6ff 100%); */
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .navbar {
+    margin:10px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+   
+  }
+
+  .navbar a {
+    margin:0px 5px;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    transition:all 0.7s;
+  }
+  .navbar a:hover {
+    border-radius: 10px;
+    background-color: #ffb703;
+    color:white;
+  }
+
+  .navbar .active{
+    background-color: #ffb703;
+    border-radius: 10px;
+  }
+
+  .navbar .login{
+    float:right;
+   
+  }
+.container{
+    background-image: url;
+    position: absolute;
+    top:35%;
+    animation-name:movement;
+    animation-duration: 1.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container p{
+  
+    margin:0;
+    width:50%;
+    text-align: center;
+    color:rgb(191, 186, 186);
+    font-size:20px;
+
+
+}
+  .heading{
+    font-size:60px;
+    color:white;
+    text-align: center;
+    
+   
+  }
+
+  @keyframes movement{
+    0%   { top:70%;}
+    
+    100% {  top:35%;}
+  }
+
+  
