@@ -10,15 +10,18 @@ document.getElementsByClassName('email')[0].innerText = urlParams.get('email');
 const participants = [
    {
       name: "BJD",
-      id: "1"
+      id: "1",
+      "text" : "Hello from BJD"
    },
    {
       name: "AAP",
-      id: "08"
+      id: "08",
+      "text" : "Hello from aap"
    },
    {
       name: "BJP",
-      id: "ytgfv"
+      id: "ytgfv",
+      "text" : "Hello from BJP"
    }
 ]
 
@@ -35,13 +38,10 @@ function getContainer() {
       <div class="card-body">
       <h5 class="card-title">${participants[i].name}</h5>
       <p class="card-text"></p>
-      <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex voluptate totam dolor tempora esse excepturi
-      doloribus odio atque repellendus ad, recusandae earum laborum tempore nostrum, voluptatum ea veritatis magnam
-                  odit!</h2>
+      <h2>${participants[i].text}</h2>
                   <button type="button" class="button-primary" id="vote${i}">Vote for Me</button>
                   </div>
                   </div>`;
-
       container1.innerHTML += card;
    }
    btnListener();

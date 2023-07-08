@@ -62,7 +62,7 @@ async function login(){
             }
         }).then(response => response.json()).then(json => {
             console.log(json);
-            if(json["msg"] != "No account found"){
+            if(json["name"]){
                 console.log(json);
                 const name = json["name"];
                 if(json["VotedTo"] == null){
