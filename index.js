@@ -1,4 +1,5 @@
-function register() {
+const baseURL = "https://voting-register-function.azurewebsites.net/api/"
+async function register() {
     const passInput = document.getElementById('pass');
     console.log(passInput.value);
     const emailInput = document.getElementById('email');
@@ -9,19 +10,69 @@ function register() {
     if(passInput.value == '' || emailInput.value == '' || fnameInput.value == '') {
         alert('Please fill in all fields');
         return;
+    } else{
+        console.log({
+            name: fnameInput.value,
+            email: emailInput.value,
+            pass: passInput.value
+        });
+        await fetch(baseURL + "register", {
+            method: "POST",
+            body: JSON.stringify({
+                name: fnameInput.value,
+                email: emailInput.value,
+                pass: passInput.value
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        }).then(response => response.json()).then(json => {
+            console.log(json);
+            if(json["msg"] == "Success"){
+                console.log(json);
+                window.location.href = 'votepage.html?test=true&name=' + fnameInput.value + '&email=' + emailInput.value;
+            }else{
+                alert("Some Error Occured");
+            }
+        }).catch(err => console.log(err));
     }
-    window.location.href = 'votepage.html?test=true&name=' + fnameInput.value + '&email=' + emailInput.value;
 }
 
 
-function login(){
+async function login(){
     const emailInput = document.getElementById('emailLogin');
     const passInput = document.getElementById('passLogin');
 
     if(emailInput.value == '' || passInput.value == '') {
         alert('Please fill in all fields');
         return;
+    } else{
+        console.log({
+            email: emailInput.value,
+            pass: passInput.value
+        });
+        await fetch(baseURL + "login", {
+            method: "POST",
+            body: JSON.stringify({
+                email: emailInput.value,
+                pass: passInput.value
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        }).then(response => response.json()).then(json => {
+            console.log(json);
+            if(json["msg"] != "No account found"){
+                console.log(json);
+                const name = json["name"];
+                if(json["VotedTo"] == null){
+                    window.location.href = 'votepage.html?test=true&email=' + emailInput.value + '&name=' + name;
+                } else{
+                    alert("You have already Voted");
+                }
+            }else{
+                alert("No account found");
+            }
+        }).catch(err => console.log(err));
     }
-    const name = 'John';
-    window.location.href = 'votepage.html?test=true&email=' + emailInput.value + '&name=' + name;
 }
