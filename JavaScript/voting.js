@@ -15,12 +15,12 @@ const participants = [
    },
    {
       name: "AAP",
-      id: "08",
+      id: "2",
       "text" : "The Aam Aadmi Party  is a political party in India. It was founded in November 2012 by Arvind Kejriwal and his then-companions,[25] following the 2011 Indian anti-corruption movement. AAP is currently the governing party in the Indian state of Punjab and the union territory of Delhi. On 10 April 2023, AAP was officially granted the status of National party by ECI.The party's election symbol is a broom."
    },
    {
       name: "BJP",
-      id: "ytgfv",
+      id: "3",
       "text" : "The Bharatiya Janata Party  is a political party in India, and one of the two major Indian political parties alongside the Indian National Congress.[38] Since 2014, it has been the ruling political party in India under Narendra Modi, the incumbent Indian prime minister.[39] The BJP is aligned with right-wing politics, and its policies adhere to Hindutva, a Hindu nationalist ideology.[40][41] It has close ideological and organisational links to the Rashtriya Swayamsevak Sangh (RSS).[42] As of March 2023, it is the country's biggest political party in terms of representation in the Parliament of India as well as state legislatures."
    }
 ]
@@ -58,7 +58,7 @@ function btnListener() {
             method: "POST",
             body: JSON.stringify({
                username: email,
-               id: i+1
+               id: participants[i].id,
             }),
             headers: {
                "Content-type": "application/json; charset=UTF-8"
