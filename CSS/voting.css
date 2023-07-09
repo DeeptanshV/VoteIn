@@ -69,3 +69,16 @@ body {
   font-size:18px;
   border-radius: 20px;
 }
+h5{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size:20px; 
+}
+
+
+.name, .email{
+  color:white;
+  text-decoration: underline;
+  font-weight: 600;
+}
