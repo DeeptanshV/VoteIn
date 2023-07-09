@@ -49,8 +49,11 @@ p{
 }
 
 h2{
+  position: fixed;
+  top:5%;
+  left:45%;
   color:white;
   text-align: center;
-  font-size: 40px;
-  margin-bottom:5px;
+  font-size: 50px;
+  
 }

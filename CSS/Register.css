@@ -33,14 +33,16 @@ h1{
     margin-bottom: 20px;
     background-color:rgb(228, 228, 228);
     border: none;
-    width:400px;
+    width:80%;
+    max-width: inherit;
     height: 40px;
     border-radius:20px;
     padding:5px 10px;
   }
 
 button{
-    width:80%;
+    margin-left:25%;
+    width:50%;
 }
 
 /* CSS for navbar */
