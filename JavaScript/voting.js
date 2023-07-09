@@ -11,7 +11,7 @@ const participants = [
    {
       name: "BJD",
       id: "1",
-      "text" : "The Biju Janata Dal  is an Indian regional political party with great influence in the state of Odisha. It was founded by the former minister of mines and minerals of the Republic of India Naveen Patnaik on 26 December 1997 as a breakaway faction from the Janata Dal.[8] The BJD is led by its founder as president of the party. The headquarters of the party is located in Forest Park, Bhubaneswar."
+      "text": "The Biju Janata Dal  is an Indian regional political party with great influence in the state of Odisha. It was founded by the former minister of mines and minerals of the Republic of India Naveen Patnaik on 26 December 1997 as a breakaway faction from the Janata Dal.[8] The BJD is led by its founder as president of the party. The headquarters of the party is located in Forest Park, Bhubaneswar."
    },
    {
       name: "AAP",
