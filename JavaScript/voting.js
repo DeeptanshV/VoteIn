@@ -53,7 +53,7 @@ function btnListener() {
       let voteButton = document.querySelector(`#vote${i}`);
       console.log(voteButton);
       voteButton.addEventListener("click", async () => {
-         
+
          await fetch(baseURL + "vote_function", {
             method: "POST",
             body: JSON.stringify({
