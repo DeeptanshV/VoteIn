@@ -58,7 +58,7 @@ function btnListener() {
             method: "POST",
             body: JSON.stringify({
                username: email,
-               "participant-id": id+1
+               id: id+1
             }),
             headers: {
                "Content-type": "application/json; charset=UTF-8"
