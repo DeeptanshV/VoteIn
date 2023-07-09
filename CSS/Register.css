@@ -41,8 +41,9 @@ h1{
   }
 
 button{
-    margin-left:25%;
+    margin-left:2%;
     width:50%;
+    margin-right: 2%;
 }
 
 /* CSS for navbar */
@@ -73,4 +74,8 @@ button{
   .navbar .active{
     background-color: #ffb703;
     border-radius: 10px;
+  }
+
+  .not-user{
+   
   }
