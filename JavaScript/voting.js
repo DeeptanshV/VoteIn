@@ -57,8 +57,8 @@ function btnListener() {
          await fetch(baseURL + "vote_function", {
             method: "POST",
             body: JSON.stringify({
-               username: email,
-               id: id+1
+               "username" : email,
+               "participant_id": id
             }),
             headers: {
                "Content-type": "application/json; charset=UTF-8"
