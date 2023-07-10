@@ -47,7 +47,7 @@ function getContainer() {
    btnListener();
 }
 
-const baseURL = "https://voting-register-function.azurewebsites.net/api/"
+const baseURL = "https://voting-function-app.azurewebsites.net/api/"
 function btnListener() {
    for (let i = 0; i < participants.length; i++) {
       let voteButton = document.querySelector(`#vote${i}`);

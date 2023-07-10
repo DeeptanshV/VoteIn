@@ -1,4 +1,4 @@
-const baseURL = "https://voting-register-function.azurewebsites.net/api/"
+const baseURL = "https://voting-function-app.azurewebsites.net/api/"
 async function register() {
     const passInput = document.getElementById('pass');
     console.log(passInput.value);
