@@ -65,11 +65,9 @@ function btnListener() {
             }
          }).then(response => response.json()).then(json => {
             console.log(json);
-            if (json["Message"] == "Thank you, Your vote has been registered") {
+            if (json["Message"] == "Thank you, Your vote has been registered to") {
                console.log(json);
                window.location.href = 'thanks.html?votedTo=' + participants[i].name;
-               
-
             } else {
                alert("Some Error Occured");
             }
